@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                  azimuthAngle = orientation[0];
                  float degrees = ((azimuthAngle * 180f)/3.14f);
                  int degreesInt = Math.round(degrees);
-                 tv_Degree.setText(Integer.toString(degreesInt)+(char) 0x00B0+"to absolute North");
+                 tv_Degree.setText(Integer.toString(degreesInt)+(char) 0x00B0+""+"to absolute North");
                  RotateAnimation rotate =new RotateAnimation(current_degree,-degreesInt, Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
                  rotate.setDuration(100);
                  rotate.setFillAfter(true);
